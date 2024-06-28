@@ -20,9 +20,11 @@
     z-index: -1;
     opacity: 0;
     animation: stars-move-in 1000ms 300ms forwards;
+    opacity: 1;
+    background-position-y: 0;
   }
   
-  @keyframes stars-move-in {
+  /* @keyframes stars-move-in {
     from {
       background-position-y: -100px;
     }
@@ -31,7 +33,7 @@
       background-position-y: 0;
     }
   }
-  
+   */
   .forest {
     position: absolute;
     bottom: -300px;
@@ -44,9 +46,11 @@
     opacity: 0;
     animation: forest-move-in 1000ms 500ms forwards;
     border-bottom: 300px solid #181d23;
+    opacity: 1;
+      background-position-y: 100%;
   }
   
-  @keyframes forest-move-in {
+  /* @keyframes forest-move-in {
     from {
       background-position-y: 150%;
     }
@@ -55,7 +59,7 @@
       background-position-y: 100%;
     }
   }
-  
+   */
   .silhouette {
     position: absolute;
     bottom: 0;
@@ -65,9 +69,11 @@
     height: 50%;
     opacity: 0;
     animation: silhouette-move-in 1000ms 800ms forwards;
+    opacity: 1;
+    background-position-x: 50%;
   }
   
-  @keyframes silhouette-move-in {
+  /* @keyframes silhouette-move-in {
     from {
       background-position-x: 0;
     }
@@ -75,7 +81,7 @@
       opacity: 1;
       background-position-x: 50%;
     }
-  }
+  } */
   
   .moon {
     position: absolute;
@@ -90,9 +96,11 @@
     z-index: -1;
     opacity: 0;
     animation: moon-move-in 1.2s 1s forwards;
+    opacity: 1;
+    background-position: top right;
   }
   
-  @keyframes moon-move-in {
+  /* @keyframes moon-move-in {
     from {
       opacity: 0;
       background-position: right 150%;
@@ -101,7 +109,7 @@
       opacity: 1;
       background-position: top right;
     }
-  }
+  } */
   
   /* Copy and CTA */
   #welcome-section .container {
@@ -113,8 +121,10 @@
     opacity: 0;
     transform: translate(0, -50%);
     animation: text-fade-in 1000ms 800ms forwards;
+    opacity: 1;
+      right: 25%;
   }
-  
+/*   
   @keyframes text-fade-in {
     from {
       right: 0;
@@ -123,7 +133,7 @@
       opacity: 1;
       right: 25%;
     }
-  }
+  } */
 
   #welcome-section .container p {
     color: white;
@@ -207,19 +217,20 @@
       position: absolute;
       transform: translate(50%, 0);
       animation: text-fade-in 1000ms 800ms forwards;
-
+      
     }
     #welcome-section .container p {
     color: white;
     font-size: 3rem !important;
     font-weight: normal;
     
-    
+
   }
   
     @keyframes text-fade-in {
       from {
-        right: 0;
+        opacity: 1;
+        right: 50%;
       }
       to {
         opacity: 1;
@@ -251,7 +262,8 @@
   
     @keyframes text-fade-in {
       from {
-        right: 0;
+        opacity: 1;
+        right: 50%;
       }
       to {
         opacity: 1;
@@ -273,7 +285,7 @@
 
       transform: translate(50%, 0);
       animation: text-fade-in 1000ms 800ms forwards;
-
+      
     }
     #welcome-section .container p {
     color: white;
@@ -286,7 +298,8 @@
   
     @keyframes text-fade-in {
       from {
-        right: 0;
+        opacity: 1;
+        right: 50%;
       }
       to {
         opacity: 1;
